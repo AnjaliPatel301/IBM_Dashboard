@@ -5,7 +5,7 @@ import Sidebar from "./comp/siderbar"
 import Plat_management from './comp/Plans_management'
 import Payment_History from "./comp/Payment_history"
 import Platform_Analytics from "./comp/Platform_analytics"
-import Subscriptions from "./comp/Companies"
+import Subscriptions from "./comp/Subscriptions"
 
 
 function App() {

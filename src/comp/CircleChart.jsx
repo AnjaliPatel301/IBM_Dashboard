@@ -11,13 +11,12 @@ const COLORS = ["#22c55e", "#fbbf24", "#38bdf8", "#4f46e5"];
 
 export function PlanChart() {
   return (
-    <div className="p-4 sm:p-5 rounded-xl bg-white shadow-sm">
-      
-            <h3 className="text-[14px] sm:text-[16px] font-semibold mb-3 sm:mb-4 text-[#243465]">
+    <div className="p-4 md:p-5 rounded-xl bg-white shadow-sm">
+      <h3 className="text-[14px] md:text-md font-semibold mb-3 md:mb-4 text-[#243465]">
         Plan Distribution
       </h3>
 
-            <div className="h-[180px] sm:h-[220px] md:h-[240px]">
+      <div className="h-[180px] md:h-[220px] lg:h-[240px]">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
@@ -35,7 +34,7 @@ export function PlanChart() {
         </ResponsiveContainer>
       </div>
 
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4 text-[11px] sm:text-xs">
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4 text-[11px] sm:text-xs">
         {pieData.map((item, i) => (
           <div key={i} className="flex items-center gap-2">
             <span

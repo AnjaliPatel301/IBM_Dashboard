@@ -1,10 +1,4 @@
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { IoIosArrowDown } from "react-icons/io";
 
 const data = [
@@ -19,12 +13,9 @@ const data = [
 
 export default function RevenueChart() {
   return (
-    <div className="bg-white rounded-xl shadow-sm p-4 sm:p-5">
-      
-            <div className="flex items-center justify-between mb-3 sm:mb-4">
-        <h3 className="text-xs sm:text-sm font-semibold text-gray-800">
-          Revenue Trend
-        </h3>
+    <div className="bg-white rounded-xl  p-4 md:p-5">
+      <div className="flex items-center justify-between mb-3 md:mb-4 text-xs sm:text-sm">
+        <h3 className=" font-semibold text-gray-800">Revenue Trend</h3>
 
         <button className="text-[11px] sm:text-xs text-gray-500 flex items-center gap-1">
           Last 7 Days
@@ -32,10 +23,9 @@ export default function RevenueChart() {
         </button>
       </div>
 
-            <div className="h-[180px] sm:h-[220px] md:h-[240px]">
+      <div className=" h-[150px] md:h-[250px] max-h-[350px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} barGap={20}>
-            
             <XAxis
               dataKey="name"
               axisLine={false}
@@ -52,7 +42,7 @@ export default function RevenueChart() {
               tick={{ fill: "#A6A8B1", fontSize: 11 }}
             />
 
-                        <Bar
+            <Bar
               dataKey="value"
               stackId="a"
               fill="#4F6EF7"
@@ -60,7 +50,7 @@ export default function RevenueChart() {
               barSize={10}
             />
 
-                        <Bar
+            <Bar
               dataKey="remaining"
               stackId="a"
               fill="#E5E7EB"
