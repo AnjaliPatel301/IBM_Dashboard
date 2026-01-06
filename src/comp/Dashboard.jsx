@@ -8,26 +8,25 @@ import { PlanChart } from "./CircleChart";
 import RevenueChart from "./ChartRevesh";
 import RecentCompanies from "./RecentComp";
 
-export default function Dashboard() {
-  return (
-   
+export default function Dashboard(){
+  return (   
    <>
-      <div className="min-h-screen font-[Poppins] bg-gray-50 ">
+      <div className=" font-[Poppins] bg-gray-50 ">
         <div className="flex flex-col lg:flex-row border-b justify-between items-start lg:items-center py-3 px-4  gap-4">
           <div>
             <h1 className="text-lg sm:text-md font-semibold text-gray-800">
               Dashboard
             </h1>
-            <p className="text-md  text-gray-500">
+            <p className="md:text-md sm:texl-sm text-gray-500">
               Welcome back, Sarah. Here's what's happening today.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4  w-full lg:w-auto">
-            <div className="relative w-full sm:w-[400px] lg:w-[603px] h-[48px] flex rounded-md border text-sm items-center justify-center gap-1">
+            <div className="relative  w-80  lg:w-[603px] md:w-[450px] sm:w-[400px] h-[48px] flex rounded-md border text-sm items-center justify-center gap-1">
               <Search className=" text-gray-400 ml-2" size={18} />
 
-              <input
+              <input 
                 type="text"
                 placeholder="Search Companies, plans..."
                 className=" py-2 w-full  bg-transparent outline-none"
@@ -44,7 +43,7 @@ export default function Dashboard() {
         </div>
 
         <div className="p-2 md:ps-4 lg:pe-14 space-y-3.5 mt-3.5">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-auto lg:grid-cols-5 gap-2 md:gap-2 ">
             {[
               {
                 label: "Total Companies",
@@ -84,10 +83,10 @@ export default function Dashboard() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white p-4 rounded-xl shadow-sm font-[Inter]"
+                className="bg-white p-4 md:p-4 rounded-xl shadow-sm font-[Inter]"
               >
                 <div
-                  className={`size-10 flex items-center justify-center rounded-lg p-2 ${item.bg} mb-3`}
+                  className={`size-10 md:flex md:items-center md:justify-center rounded-lg p-2 ${item.bg} mb-3`}
                 >
                   <item.Icon className={`text-lg ${item.color}`} />
                 </div>

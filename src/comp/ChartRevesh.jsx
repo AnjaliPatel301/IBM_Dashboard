@@ -13,7 +13,7 @@ const data = [
 
 export default function RevenueChart() {
   return (
-    <div className="bg-white rounded-xl  p-4 md:p-5">
+    <div className="bg-white rounded-xl md:w-auto w-1/2 p-4 md:p-5">
       <div className="flex items-center justify-between mb-3 md:mb-4 text-xs sm:text-sm">
         <h3 className=" font-semibold text-gray-800">Revenue Trend</h3>
 

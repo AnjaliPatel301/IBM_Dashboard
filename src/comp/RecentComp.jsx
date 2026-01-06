@@ -111,7 +111,7 @@ export default function RecentCompanies() {
       </div>
 
       <div className="overflow-x-auto border rounded-lg">
-        <table className="w-full  text-[12px] md:text-sm">
+        <table className="w-full min-w-[900px] text-[12px] md:text-sm">
           <thead className="text-gray-400 border-b">
             <tr>
               <th className="py-2 ps-6 text-left">Company Name</th>

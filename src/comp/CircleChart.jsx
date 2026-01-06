@@ -11,12 +11,12 @@ const COLORS = ["#22c55e", "#fbbf24", "#38bdf8", "#4f46e5"];
 
 export function PlanChart() {
   return (
-    <div className="p-4 md:p-5 rounded-xl bg-white shadow-sm">
+    <div className="p-4 w-auto md:p-5 rounded-xl bg-white shadow-sm">
       <h3 className="text-[14px] md:text-md font-semibold mb-3 md:mb-4 text-[#243465]">
         Plan Distribution
       </h3>
 
-      <div className="h-[180px] md:h-[220px] lg:h-[240px]">
+      <div className="h-[180px] w-1/2 md:w-auto  md:h-[220px] lg:h-[240px]">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie

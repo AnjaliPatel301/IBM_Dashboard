@@ -46,14 +46,14 @@ const Sidebar = ({ active, setActive, sidebarOpen, setSidebarOpen }) => {
       {sidebarOpen && (
         <div
           onClick={() => setSidebarOpen(false)}
-          className="fixed font-[Poppins] inset-0 bg-black/40 z-40 md:hidden"
+          className="fixed font-[Poppins] inset-0 bg-black/40 z-40 lg:hidden"
         />
       )}
 
       <aside
         className={`
-    fixed md:sticky top-0 left-0 z-50
-    min-h-screen w-[240px]
+    fixed md:sticky  top-0 left-0 z-50
+    min-h-screen w-[240px] 
     bg-black text-white
     transition-transform duration-300
     ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
